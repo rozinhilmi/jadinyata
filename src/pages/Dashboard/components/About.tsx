@@ -9,7 +9,7 @@ const About = () => {
       margin={"20px"}
       borderRadius={"12px"}
       minHeight={{ base: "85vh", lg: "700px" }}
-      id="About"
+      id="TentangKami"
     >
       <Text as={"b"} fontSize={{ base: "2xl", lg: "3xl" }} color={primaryTextColor()} textAlign={"center"} marginTop={"40px"}>
         Tentang Kami

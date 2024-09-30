@@ -1,5 +1,5 @@
 import { Stack, Text } from "@chakra-ui/react";
-import { secondaryBackgroundColor, secondaryTextColor } from "../../../components/theme";
+import { primaryTextColor, secondaryTextColor } from "../../../components/theme";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/free-mode";
@@ -27,16 +27,8 @@ const ProposalBisnis = () => {
   ];
 
   return (
-    <Stack
-      padding={{ base: "5px", lg: "30px" }}
-      paddingY={"30px"}
-      margin={{ base: "5px", md: "20px" }}
-      borderRadius={"12px"}
-      boxShadow={"rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;"}
-      id="ProposalBisnis"
-      backgroundColor={secondaryBackgroundColor()}
-    >
-      <Text as={"b"} fontSize={{ base: "2xl", lg: "3xl" }} color={"black"} textAlign={"center"} marginTop={"40px"}>
+    <Stack padding={{ base: "5px", lg: "30px" }} paddingY={"30px"} margin={"20px"} borderRadius={"12px"} id="ProposalBisnis">
+      <Text as={"b"} fontSize={{ base: "2xl", lg: "3xl" }} color={primaryTextColor()} textAlign={"center"} marginTop={"40px"}>
         Proposal Bisnis
       </Text>
       <Text color={secondaryTextColor()} textAlign={"center"} maxWidth={"750px"} alignSelf={"center"} width={"100%"}>
@@ -52,11 +44,11 @@ const ProposalBisnis = () => {
           }}
           breakpoints={{
             320: {
-              slidesPerView: 1,
+              slidesPerView: 1.2,
               spaceBetween: 10,
             },
             768: {
-              slidesPerView: 2,
+              slidesPerView: 2.2,
               spaceBetween: 20,
             },
             1024: {
@@ -69,7 +61,7 @@ const ProposalBisnis = () => {
           style={{ paddingBottom: "40px" }}
         >
           {proposals.map((proposal, index) => (
-            <SwiperSlide key={index} style={{ backgroundColor: secondaryBackgroundColor() }}>
+            <SwiperSlide key={index}>
               <a href={proposal.pdf} target="_blank" rel="noopener noreferrer" style={{ cursor: "pointer" }}>
                 <img
                   src={`${proposal.thumbnail}`} // Assuming you have images named after the title

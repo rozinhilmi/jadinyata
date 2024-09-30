@@ -5,7 +5,7 @@ import "./carouselStyles.css";
 
 // Import required modules
 import { Pagination, Autoplay } from "swiper/modules";
-import { Stack, Box, Image } from "@chakra-ui/react";
+import { Stack, Box, Image, Text } from "@chakra-ui/react";
 
 export default function Carousel() {
   const images = ["1.jpg", "2.jpg", "3.jpg", "4.jpg"];
@@ -26,7 +26,7 @@ export default function Carousel() {
       >
         {images.map((image, index) => (
           <SwiperSlide key={index}>
-            <Box position="relative" width="100%" height="100%" display="flex" alignItems="center" justifyContent="center">
+            <Box width="100%" height="100%" display="flex" alignItems="center" justifyContent="center" zIndex={"10"}>
               <Image
                 src={image}
                 alt={`Slide ${index + 1}`}
@@ -40,6 +40,11 @@ export default function Carousel() {
           </SwiperSlide>
         ))}
       </Swiper>
+      <Box width="100%" height="100%" display="flex" alignItems="center" justifyContent="center" position={"absolute"} zIndex={"11"}>
+        <Text color={"white"} fontWeight={"bold"} fontSize={{ base: "2xl", md: "5xl" }} margin={"auto"}>
+          #RealisasikanIdeBisnismu
+        </Text>
+      </Box>
     </Stack>
   );
 }

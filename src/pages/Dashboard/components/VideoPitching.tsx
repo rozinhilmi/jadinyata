@@ -6,7 +6,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
-import { primaryTextColor, secondaryBackgroundColor, secondaryTextColor } from "../../../components/theme";
+import { secondaryBackgroundColor, secondaryTextColor } from "../../../components/theme";
 
 const VideoPitching = () => {
   const videos = [

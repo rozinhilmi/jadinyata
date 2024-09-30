@@ -18,7 +18,7 @@ const Navbar = () => {
       }
 
       // Check which section is currently in view
-      const sections = ["About", "VideoPitching", "ProposalBisnis", "NegoDiSini"];
+      const sections = ["TentangKami", "VideoPitching", "ProposalBisnis", "NegoDiSini"];
       let foundSection = "";
 
       for (const section of sections) {
@@ -57,7 +57,7 @@ const Navbar = () => {
         <Image objectFit={"contain"} width={"200px"} src="/logo-vertical.png" />
 
         <HStack gap="15px" display={{ base: "none", lg: "flex" }}>
-          {["About", "VideoPitching", "ProposalBisnis", "NegoDiSini"].map((section) => (
+          {["TentangKami", "VideoPitching", "ProposalBisnis", "NegoDiSini"].map((section) => (
             <a href={`#${section}`} key={section}>
               <Text
                 color={activeSection === section ? "rgb(49, 130, 206)" : primaryTextColor()}
@@ -93,14 +93,15 @@ const Navbar = () => {
         position="fixed"
         zIndex="21"
       >
-        <HStack justifyContent="flex-end">
+        <HStack justifyContent="space-between">
+          <Image objectFit={"contain"} width={"200px"} src="/logo-vertical.png" />
           <Button variant="outline" colorScheme="blue" display={{ base: "flex", lg: "none" }} onClick={() => setShowSidebar(false)}>
             <IoMdClose />
           </Button>
         </HStack>
 
         <Stack gap="10px" my="30px">
-          {["About", "VideoPitching", "ProposalBisnis", "NegoDiSini"].map((section) => (
+          {["TentangKami", "VideoPitching", "ProposalBisnis", "NegoDiSini"].map((section) => (
             <Button
               key={section}
               variant={activeSection === section ? "solid" : "outline"}
