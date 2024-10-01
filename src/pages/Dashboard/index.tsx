@@ -27,7 +27,7 @@ const index = () => {
         <ProposalBisnis />
         <Nego />
         <Footer />
-        <Link to={`https://wa.me/+6282232871420}?text=Selamat datang di Jadinyata.id, ada yang bisa kami bantu?`} target="_blank">
+        <Link to={`https://wa.me/+6282232871420?text=Selamat%20datang%20di%20Jadinyata.id,%20ada%20yang%20bisa%20kami%20bantu?`} target="_blank">
           <Image
             position={"fixed"}
             bottom={{ base: "10px", md: "25px" }}
