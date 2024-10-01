@@ -18,15 +18,16 @@ const VideoPitching = () => {
 
   return (
     <Stack
-      padding={{ base: "0px", lg: "30px" }}
-      paddingY={"30px"}
-      margin={{ base: "5px", md: "20px" }}
+      padding={{ base: "5", lg: "30px" }}
+      marginTop={"30px"}
+      marginX={{ base: "5px", md: "20px" }}
+      paddingBottom={"30px"}
       borderRadius={"12px"}
       id="VideoPitching"
       backgroundColor={secondaryBackgroundColor()}
       boxShadow={"rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;"}
     >
-      <Text as={"b"} fontSize={{ base: "2xl", lg: "3xl" }} color={"black"} textAlign={"center"} marginTop={"40px"}>
+      <Text as={"b"} fontSize={{ base: "2xl", lg: "3xl" }} color={"black"} textAlign={"center"} marginY={"20px"}>
         Video Pitching
       </Text>
       <Text color={secondaryTextColor()} textAlign={"center"} maxWidth={"750px"} alignSelf={"center"}>

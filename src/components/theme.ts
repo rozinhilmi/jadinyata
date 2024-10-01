@@ -11,14 +11,14 @@ export const primaryBackgroundColor = () => {
 };
 export const secondaryBackgroundColor = () => {
   // return "#E6F0FF";
-  return "rgba(224, 242, 254, 1)";
+  return "rgba(224, 242, 254, 0.4)";
 };
 
 export const primaryTextColor = () => {
   return "#3182ce;";
 };
 
-export const secondaryTextColor = () => "#333333";
+export const secondaryTextColor = () => "#40444f";
 
 export const theme = extendTheme({
   styles: {

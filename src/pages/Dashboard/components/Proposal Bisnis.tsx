@@ -27,7 +27,15 @@ const ProposalBisnis = () => {
   ];
 
   return (
-    <Stack padding={{ base: "5px", lg: "30px" }} paddingY={"30px"} margin={"20px"} borderRadius={"12px"} id="ProposalBisnis">
+    <Stack
+      padding={{ base: "5px", lg: "30px" }}
+      marginTop={"30px"}
+      paddingBottom={"30px"}
+      marginX={"20px"}
+      borderRadius={"12px"}
+      id="ProposalBisnis"
+      background={"radial-gradient(50% 50% at center center,rgba(10,149,231,.12) 0,rgba(10,149,231,0) 100%)"}
+    >
       <Text as={"b"} fontSize={{ base: "2xl", lg: "3xl" }} color={primaryTextColor()} textAlign={"center"} marginTop={"40px"}>
         Proposal Bisnis
       </Text>
@@ -36,7 +44,7 @@ const ProposalBisnis = () => {
         ringkasan eksekutif, analisis pasar, rencana operasional, dan strategi keuangan.
       </Text>
 
-      <Stack height={"300px"} marginTop={"30px"}>
+      <Stack height={"300px"} marginTop={"10px"}>
         <Swiper
           freeMode={true}
           pagination={{
@@ -61,7 +69,7 @@ const ProposalBisnis = () => {
           style={{ paddingBottom: "40px" }}
         >
           {proposals.map((proposal, index) => (
-            <SwiperSlide key={index}>
+            <SwiperSlide key={index} style={{ backgroundColor: "transparent" }}>
               <a href={proposal.pdf} target="_blank" rel="noopener noreferrer" style={{ cursor: "pointer" }}>
                 <img
                   src={`${proposal.thumbnail}`} // Assuming you have images named after the title
