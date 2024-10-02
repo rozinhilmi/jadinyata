@@ -4,7 +4,7 @@ import { secondaryBackgroundColor, secondaryTextColor } from "../../../component
 const Footer = () => {
   return (
     <HStack
-      height={"200px"}
+      paddingY={"30px"}
       width={"100%"}
       justifyContent={"center"}
       alignItems={"center"}
