@@ -15,7 +15,7 @@ const Nego = () => {
       id="NegoDiSini"
       // boxShadow={"rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;"}
     >
-      <Text as={"b"} fontSize={{ base: "2xl", lg: "3xl" }} color={primaryTextColor()} textAlign={"center"} marginTop={"40px"}>
+      <Text as={"b"} fontSize={{ base: "2xl", lg: "3xl" }} color={primaryTextColor()} textAlign={"center"} marginBottom={"20px"}>
         Nego di Sini
       </Text>
       <Text color={secondaryTextColor()} textAlign={"center"} maxWidth={"750px"} alignSelf={"center"}>
