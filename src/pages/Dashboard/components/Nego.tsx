@@ -4,7 +4,7 @@ import { primaryTextColor, secondaryTextColor } from "../../../components/theme"
 const Nego = () => {
   return (
     <Stack
-      padding={{ base: "5px", lg: "30px" }}
+      padding={{ base: "5", lg: "30px" }}
       marginTop={"30px"}
       marginX={{ base: "5px", md: "20px" }}
       paddingBottom={"30px"}
@@ -18,7 +18,7 @@ const Nego = () => {
       <Text as={"b"} fontSize={{ base: "2xl", lg: "3xl" }} color={primaryTextColor()} textAlign={"center"} marginTop={"40px"}>
         Nego di Sini
       </Text>
-      <Text color={secondaryTextColor()} textAlign={"center"} maxWidth={"750px"} alignSelf={"center"}>
+      <Text color={secondaryTextColor()} textAlign={{ base: "justify", md: "center" }} maxWidth={"750px"} alignSelf={"center"}>
         Fitur Nego Disini adalah platform komunikasi yang memungkinkan mahasiswa dan investor untuk bernegosiasi dan berdiskusi tentang berbagai aspek
         ide bisnis dan kemungkinan investasi. Fitur ini mendukung chat langsung, pengaturan pertemuan virtual, dan diskusi terkait kesepakatan
         investasi.

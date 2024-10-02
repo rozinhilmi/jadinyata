@@ -43,28 +43,28 @@ const About = () => {
             </Stack>
           </Stack>
           <Stack width={{ base: "100%", xl: "50%" }} gap={"20px"} alignSelf={"center"}>
-            <Text color={secondaryTextColor()} textAlign={"start"}>
+            <Text color={secondaryTextColor()} textAlign={"justify"}>
               Jadinyata.id merupakan platform inovatif yang dirancang khusus untuk mahasiswa yang ingin mengembangkan ide bisnis mereka dan
               menghubungkannya dengan calon investor. Sebagai bagian dari mata kuliah komunikasi dan negosiasi bisnis, Jadinyata.id memberikan
               kesempatan unik bagi mahasiswa untuk membuat video presentasi yang menggambarkan ide bisnis mereka secara mendalam, serta memberikan
               peluang pendanaan. Tidak hanya itu, Jadinyata.id juga terdapat fitur feedback & rating sehingga Investor dapat memberikan umpan balik
               dan penilaian terhadap video presentasi, yang membantu mahasiswa memperbaiki dan mengembangkan ide mereka.
             </Text>
+            <Text
+              color={secondaryTextColor()}
+              textAlign={"justify"}
+              // textAlign={{
+              //   base: "start",
+              //   md: "end",
+              // }}
+            >
+              Kami berkomitmen untuk mempercepat proses inovasi dan wirausaha dengan menyediakan jembatan antara ide kreatif mahasiswa dan dukungan
+              finansial dari investor. Jadinyata.id bertujuan untuk menciptakan ekosistem yang mendukung pertumbuhan ide bisnis baru dan memperkuat
+              keterampilan komunikasi serta negosiasi di kalangan mahasiswa.
+            </Text>
           </Stack>
         </HStack>
       </Stack>
-      <Text
-        color={secondaryTextColor()}
-        textAlign={"start"}
-        // textAlign={{
-        //   base: "start",
-        //   md: "end",
-        // }}
-      >
-        Kami berkomitmen untuk mempercepat proses inovasi dan wirausaha dengan menyediakan jembatan antara ide kreatif mahasiswa dan dukungan
-        finansial dari investor. Jadinyata.id bertujuan untuk menciptakan ekosistem yang mendukung pertumbuhan ide bisnis baru dan memperkuat
-        keterampilan komunikasi serta negosiasi di kalangan mahasiswa.
-      </Text>
     </Stack>
   );
 };

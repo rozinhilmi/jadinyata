@@ -39,7 +39,7 @@ const ProposalBisnis = () => {
       <Text as={"b"} fontSize={{ base: "2xl", lg: "3xl" }} color={primaryTextColor()} textAlign={"center"} marginTop={"40px"}>
         Proposal Bisnis
       </Text>
-      <Text color={secondaryTextColor()} textAlign={"center"} maxWidth={"750px"} alignSelf={"center"} width={"100%"}>
+      <Text color={secondaryTextColor()} textAlign={{ base: "justify", md: "center" }} maxWidth={"750px"} alignSelf={"center"} width={"100%"}>
         Saatnya mahasiswa untuk mengunggah dokumen proposal yang terperinci mengenai ide bisnis mereka. Proposal ini mencakup elemen-elemen seperti
         ringkasan eksekutif, analisis pasar, rencana operasional, dan strategi keuangan.
       </Text>

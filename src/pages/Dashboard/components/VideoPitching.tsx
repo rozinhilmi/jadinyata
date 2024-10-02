@@ -30,7 +30,7 @@ const VideoPitching = () => {
       <Text as={"b"} fontSize={{ base: "2xl", lg: "3xl" }} color={"black"} textAlign={"center"} marginY={"20px"}>
         Video Pitching
       </Text>
-      <Text color={secondaryTextColor()} textAlign={"center"} maxWidth={"750px"} alignSelf={"center"}>
+      <Text color={secondaryTextColor()} textAlign={{ base: "justify", md: "center" }} maxWidth={"750px"} alignSelf={"center"}>
         Fitur utama di Jadinyata.id yang memungkinkan mahasiswa untuk membuat dan mengunggah video presentasi ide bisnis mereka. Dalam video ini,
         mahasiswa dapat menyajikan informasi penting seperti deskripsi ide, analisis pasar, model bisnis, strategi pemasaran, dan proyeksi keuangan.
       </Text>
