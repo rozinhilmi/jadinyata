@@ -6,7 +6,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
-import { secondaryBackgroundColor, secondaryTextColor } from "../../../components/theme";
+import { primaryTextColor, secondaryBackgroundColor, secondaryTextColor } from "../../../components/theme";
 
 const VideoPitching = () => {
   const videos = [
@@ -27,10 +27,10 @@ const VideoPitching = () => {
       backgroundColor={secondaryBackgroundColor()}
       boxShadow={"rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;"}
     >
-      <Text as={"b"} fontSize={{ base: "2xl", lg: "3xl" }} color={"black"} textAlign={"center"} marginY={"20px"}>
+      <Text as={"b"} fontSize={{ base: "2xl", lg: "3xl" }} color={primaryTextColor()} textAlign={"center"} marginY={"20px"}>
         Video Pitching
       </Text>
-      <Text color={secondaryTextColor()} textAlign={{ base: "justify", md: "center" }} maxWidth={"750px"} alignSelf={"center"}>
+      <Text color={secondaryTextColor()} textAlign={"center"} maxWidth={"750px"} alignSelf={"center"}>
         Fitur utama di Jadinyata.id yang memungkinkan mahasiswa untuk membuat dan mengunggah video presentasi ide bisnis mereka. Dalam video ini,
         mahasiswa dapat menyajikan informasi penting seperti deskripsi ide, analisis pasar, model bisnis, strategi pemasaran, dan proyeksi keuangan.
       </Text>
